@@ -12,6 +12,8 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Length;
 
+import com.Validator.isValidPassword;
+
 
 
 
@@ -28,6 +30,7 @@ public class Customer {
 	private String email;
 	private int customerId;
 	@Size(min= 3, message = " 3 characters required")
+	@isValidPassword
 	private String password;
 	public Customer() {
 		super();

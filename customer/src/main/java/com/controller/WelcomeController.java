@@ -39,7 +39,7 @@ public class WelcomeController {
 			return "signUp";
 		}
 		String page = "register";
-		System.out.println(customer.getName());
+		System.out.println("Customer name :" + customer.getName());
 		
 		m.addAttribute("page", page);
 		
